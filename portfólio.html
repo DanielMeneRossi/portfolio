@@ -10,7 +10,6 @@
    			background-color: #121212;
   			font-family: "proxima-nova", "Helvetica", arial, sans-serif;
   			font-weight: 700;
-			text-transform: uppercase;
 			letter-spacing: 3px;
 			font-size: 14px;
 			color: white;
@@ -24,27 +23,29 @@
 			padding-top: 30px;
    			padding-bottom: 30px;
    			justify-content: space-between;
+            text-transform: uppercase;
 		}
 		#container-lista{
 			justify-content: end;
-    			display: flex;
+    		display: flex;
    			align-items: center;
 		}
 		#menu{
+        	cursor: default;
 			display: flex;
 		}
 	        a{
 	        	color: white;
-	            	text-decoration: none;
-	            	opacity: 0.4;
+	        	text-decoration: none;
+	        	opacity: 0.4;
 	        }
 		a:hover{
         		opacity: 1.0;
         		transition-behavior: normal;
-   			transition-duration: 200ms;
+   				transition-duration: 200ms;
    	    		transition-timing-function: ease;
-   			transition-delay: 0s;
-   			transition-property: opacity;
+   				transition-delay: 0s;
+   				transition-property: opacity;
         	}
 		hr{
 			margin: 0px;
@@ -57,15 +58,44 @@
 		li{
 			display: inline-block;
 			list-style-type: none;
-			padding-left: 50px;
-   			padding-right: 50px;
+			padding-left: 100px;
 		}
+        
+        body {
+          --sb-track-color: #000000;
+          --sb-thumb-color: #262626;
+          --sb-size: 10px;
+        }
+		/*BARRA DO SCROLL*/
+        body::-webkit-scrollbar {
+          width: var(--sb-size)
+        }
+
+        body::-webkit-scrollbar-track {
+          background: var(--sb-track-color);
+        }
+
+        body::-webkit-scrollbar-thumb {
+          background: var(--sb-thumb-color);
+
+        }
+        body::-webkit-scrollbar-thumb:hover {
+                  	background: #3b3b3b;
+        }
+
+        @supports not selector(::-webkit-scrollbar) {
+          body {
+            scrollbar-color: var(--sb-thumb-color)
+                             var(--sb-track-color);
+          }
+        }
+        /*FIM BARRA DO SCROLL*/
 	</style>
 </head>
 <body>
 	<header id="container-header">
 		<nav id="menu">
-			Menu
+			Daniel Meneghetti
 		</nav>
 		<nav id="container-lista">
   		<ul>
@@ -73,7 +103,7 @@
   				<a href="default.asp">Início</a>
   			</li>
   			<li>
-  				<a href="default.asp">Sobre</a>
+  				<a href="default.asp">Skills</a>
   			</li>
   			<li>
   				<a href="default.asp">Experiência</a>
@@ -81,12 +111,21 @@
   			<li>
   				<a href="default.asp">Projetos</a>
   			</li>
+            <li>
+  				<a href="default.asp">Contato</a>
+  			</li>
   		</ul>
 		</nav>
 	</header>
 	<hr>
 	<main>
-	  aa
+<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
 	</main>
 </body>
 </html>
