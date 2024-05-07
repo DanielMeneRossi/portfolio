@@ -23,15 +23,15 @@
 			padding-top: 30px;
    			padding-bottom: 30px;
    			justify-content: space-between;
-            text-transform: uppercase;
+            		text-transform: uppercase;
 		}
 		#container-lista{
 			justify-content: end;
-    		display: flex;
+    			display: flex;
    			align-items: center;
 		}
 		#menu{
-        	cursor: default;
+        		cursor: default;
 			display: flex;
 		}
 	        a{
@@ -42,10 +42,10 @@
 		a:hover{
         		opacity: 1.0;
         		transition-behavior: normal;
-   				transition-duration: 200ms;
+   			transition-duration: 200ms;
    	    		transition-timing-function: ease;
-   				transition-delay: 0s;
-   				transition-property: opacity;
+   			transition-delay: 0s;
+   			transition-property: opacity;
         	}
 		hr{
 			margin: 0px;
@@ -60,36 +60,33 @@
 			list-style-type: none;
 			padding-left: 100px;
 		}
-        
-        body {
-          --sb-track-color: #000000;
-          --sb-thumb-color: #262626;
-          --sb-size: 10px;
-        }
-		/*BARRA DO SCROLL*/
-        body::-webkit-scrollbar {
-          width: var(--sb-size)
-        }
-
-        body::-webkit-scrollbar-track {
-          background: var(--sb-track-color);
-        }
-
-        body::-webkit-scrollbar-thumb {
-          background: var(--sb-thumb-color);
-
-        }
-        body::-webkit-scrollbar-thumb:hover {
-                  	background: #3b3b3b;
-        }
-
-        @supports not selector(::-webkit-scrollbar) {
-          body {
-            scrollbar-color: var(--sb-thumb-color)
-                             var(--sb-track-color);
-          }
-        }
-        /*FIM BARRA DO SCROLL*/
+	        /*BARRA DO SCROLL*/
+	        body {
+	        	--sb-track-color: #000000;
+	        	--sb-thumb-color: #262626;
+	       		--sb-size: 10px;
+	        }
+	        body::-webkit-scrollbar {
+	        	width: var(--sb-size)
+	        }
+	
+	        body::-webkit-scrollbar-track {
+	        	background: var(--sb-track-color);
+	        }
+	
+	        body::-webkit-scrollbar-thumb {
+	        	background: var(--sb-thumb-color);
+	        }
+	        body::-webkit-scrollbar-thumb:hover {
+	        	background: #3b3b3b;
+	        }
+	
+	        @supports not selector(::-webkit-scrollbar) {
+	        body {
+	        	scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+	          }
+	        }
+	        /*FIM BARRA DO SCROLL*/
 	</style>
 </head>
 <body>
@@ -111,7 +108,7 @@
   			<li>
   				<a href="default.asp">Projetos</a>
   			</li>
-            <li>
+            		<li>
   				<a href="default.asp">Contato</a>
   			</li>
   		</ul>
